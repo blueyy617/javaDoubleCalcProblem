@@ -4,12 +4,14 @@
 一、具体问题：
 
   对两个double类型的值进行运算，有时会出现结果值异常的问题。比如： 
+  
      System.out.println(19.99+20);
      System.out.println(1.0-0.66);
      System.out.println(0.033*100);
      System.out.println(12.3/100);
      
 输出：
+
 39.989999999999995
 0.33999999999999997
 3.3000000000000003
@@ -23,6 +25,7 @@
 double类型四则运算例子：
 
 1.相加
+
    public static double add(double a1, double b1) {  
          BigDecimal a2 = new BigDecimal(Double.toString(a1));  
          BigDecimal b2 = new BigDecimal(Double.toString(b1));  
